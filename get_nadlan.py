@@ -6,7 +6,7 @@ from chrome_handler import ChromeHandler
 from gov_excel_handler import ExcelHandler
 
 # Constants
-NADLAN_START_URL = r"https://www.misim.gov.il/svinfonadlan2010"
+NADLAN_START_URL = r"https://nadlan.taxes.gov.il/svinfonadlan2010/startpageNadlanNewDesign.aspx?ProcessKey=06b4de83-6094-4401-9bc8-e980a0577cc6"
 RESULT_PAGE_STR = "InfoNadlanPerut"
 EXCEL_RESULT_FOLDER_NAME = "Excel_Result_"
 DATE_TIME_STR = "%d-%m-%y_%H-%M-%S"
