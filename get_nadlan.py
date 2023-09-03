@@ -1,6 +1,7 @@
 import os
 import re
 from datetime import datetime
+from time import sleep
 
 from chrome_handler import ChromeHandler
 from gov_excel_handler import ExcelHandler
@@ -133,6 +134,7 @@ class GovGet(object):
         self.excel_handler.insert_list_to_row(data_list=data_list)
         self.chrome.save_screenshot_to_dir(self.download_dir, DETAIL_PAGE_PIC_NAME.format(data_list[0]))
         self.chrome.go_to_prev_page()
+        sleep(0.5)
 
     def get_page_info(self):
         page_info = self.chrome.get_text_by_filed_id(NUM_OF_PAGES_ID)
